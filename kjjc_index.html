@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한국언론학보 규정 안내 | 한국언론학회</title>
+<meta name="description" content="한국언론학보 연구윤리규정과 학보 규정 개정 사항을 학회원께 안내합니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --navy:#17305c;
+  --navy-deep:#0f2244;
+  --accent:#2f5fb3;
+  --ink:#1b2230;
+  --muted:#5a6475;
+  --line:#e3e7ee;
+  --soft:#f5f7fb;
+  --bg:#ffffff;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Pretendard Variable",Pretendard,"Noto Sans KR",system-ui,sans-serif;
+  font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased;
+  word-break:keep-all;
+}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:19px;letter-spacing:-.02em;color:var(--navy)}
+.brand small{font-weight:500;color:var(--muted);margin-left:8px;font-size:13px}
+.top nav{display:flex;gap:6px}
+.top nav a{padding:8px 14px;border-radius:999px;font-size:15px;color:var(--muted);font-weight:500;transition:.2s}
+.top nav a:hover{background:var(--soft);color:var(--navy)}
+
+/* hero */
+.hero{padding:112px 0 96px;text-align:center}
+.eyebrow{display:inline-block;font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.04em;margin-bottom:20px}
+.hero h1{margin:0;font-size:clamp(34px,6vw,58px);line-height:1.2;letter-spacing:-.035em;font-weight:800;color:var(--navy-deep)}
+.hero p{max-width:620px;margin:24px auto 0;color:var(--muted);font-size:19px}
+.btns{margin-top:40px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px;transition:.2s;border:1.5px solid var(--navy)}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--navy-deep)}
+.btn.ghost{color:var(--navy)}
+.btn.ghost:hover{background:var(--soft)}
+
+/* sections */
+section{padding:88px 0}
+section.alt{background:var(--soft)}
+.sec-head{margin-bottom:40px}
+.sec-head .num{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.06em}
+.sec-head h2{margin:6px 0 8px;font-size:clamp(26px,4vw,34px);letter-spacing:-.03em;color:var(--navy-deep);line-height:1.3}
+.sec-head p{margin:0;color:var(--muted)}
+
+/* video */
+.video{max-width:900px;margin:0 auto}
+.video-frame{position:relative;aspect-ratio:16/9;background:#0b1530;border-radius:var(--radius);overflow:hidden;box-shadow:0 20px 50px -24px rgba(15,34,68,.45)}
+.video-frame video{position:absolute;inset:0;width:100%;height:100%;display:block;background:#000}
+.video-cap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:15px}
+.video-cap a{color:var(--accent);font-weight:600;border-bottom:1px solid currentColor}
+
+/* cards */
+.grid{display:grid;gap:20px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{
+  display:flex;flex-direction:column;gap:10px;padding:30px 30px 26px;
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+}
+.card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 14px 30px -20px rgba(23,48,92,.5)}
+.tag{align-self:flex-start;font-size:12.5px;font-weight:700;letter-spacing:.04em;padding:3px 10px;border-radius:999px;background:#e8eefb;color:var(--navy)}
+.tag.pdf{background:#fdecec;color:#a02a2a}
+.tag.web{background:#e8f4ee;color:#1f6b45}
+.card h3{margin:6px 0 0;font-size:21px;line-height:1.4;letter-spacing:-.02em;color:var(--navy-deep)}
+.card p{margin:0;color:var(--muted);font-size:15.5px;line-height:1.65;flex:1}
+.open{margin-top:12px;font-weight:600;color:var(--accent);font-size:15px}
+.open span{display:inline-block;transition:transform .2s}
+.card:hover .open span{transform:translateX(4px)}
+.card.outline{background:transparent}
+.card.compact{padding:24px}
+.card.compact h3{font-size:18px}
+
+/* footer */
+footer{background:var(--navy-deep);color:#c9d3e6;padding:56px 0 48px;font-size:14.5px}
+footer .brand{color:#fff;display:block;margin-bottom:14px}
+footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.35)}
+footer p{margin:4px 0}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .card,.card:hover{transition:none;transform:none}
+}
+@media (max-width:760px){
+  body{font-size:16.5px}
+  .hero{padding:72px 0 64px}
+  section{padding:64px 0}
+  .grid.two{grid-template-columns:1fr}
+  .top nav a:not(.keep){display:none}
+  .brand small{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">본문 바로가기</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://comm.or.kr/" target="_blank" rel="noopener">한국언론학회<small>한국언론학보</small></a>
+    <nav aria-label="페이지 내 이동">
+      <a href="#video">안내 영상</a>
+      <a href="#summary">요약</a>
+      <a href="#rules">규정 원문</a>
+      <a href="#manuals">매뉴얼</a>
+      <a class="keep" href="https://ksjcs.jams.or.kr/" target="_blank" rel="noopener">논문 투고</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">한국언론학보 · 학회원 안내</span>
+      <h1>한국언론학보,<br>무엇이 달라지나</h1>
+      <p>연구윤리규정과 학보 규정의 개정 사항을 한곳에 모았습니다. 영상으로 먼저 훑어보고, 요약과 원문으로 이어서 확인하세요.</p>
+      <div class="btns">
+        <a class="btn primary" href="#video">안내 영상 보기</a>
+        <a class="btn ghost" href="#rules">규정 원문 보기</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="video" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">01</span>
+        <h2>안내 영상</h2>
+        <p>학술지 연구윤리규정과 한국언론학보 규정을 영상으로 안내합니다.</p>
+      </div>
+      <div class="video reveal">
+        <div class="video-frame">
+          <video controls preload="metadata" playsinline title="학술지 연구윤리규정과 한국언론학보 규정 안내 영상">
+            <source src="https://zephyr71.github.io/kjjcs-invitation-video/invitation.mp4" type="video/mp4">
+            이 브라우저는 영상 재생을 지원하지 않습니다. 아래 링크에서 영상을 직접 열어 주세요.
+          </video>
+        </div>
+        <div class="video-cap">
+          <span>학술지 연구윤리규정과 한국언론학보 규정 안내 영상</span>
+          <a href="https://zephyr71.github.io/kjjcs-invitation-video/invitation.mp4" target="_blank" rel="noopener">영상 직접 열기 ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="summary">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">02</span>
+        <h2>먼저 읽어보세요</h2>
+        <p>규정의 변화를 쉽게 풀어 정리한 요약 자료입니다.</p>
+      </div>
+      <div class="grid two">
+        <a class="card reveal" href="https://zephyr71.github.io/kwu-media-programs/journal-changes/journal-changes.html" target="_blank" rel="noopener">
+          <span class="tag web">웹페이지</span>
+          <h3>한국언론학보, 무엇이 달라지나</h3>
+          <p>개정된 규정에서 달라지는 핵심 사항을 한눈에 볼 수 있도록 정리했습니다.</p>
+          <span class="open">열어보기 <span>→</span></span>
+        </a>
+        <a class="card reveal" href="https://zephyr71.github.io/kwu-media-programs/faq-editor/QnA.html" target="_blank" rel="noopener">
+          <span class="tag web">웹페이지</span>
+          <h3>편집위원장에게 묻다</h3>
+          <p>한국언론학보 규정과 윤리 규정이 무엇이, 왜 바뀌는지 문답 형식으로 설명합니다.</p>
+          <span class="open">열어보기 <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="rules" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">03</span>
+        <h2>규정 원문</h2>
+        <p>정확한 조문은 아래 원문(PDF)에서 확인하실 수 있습니다.</p>
+      </div>
+      <div class="grid two">
+        <a class="card outline reveal" href="https://zephyr71.github.io/kjjcs-invitation-video/research-ethics-regulations.pdf" target="_blank" rel="noopener">
+          <span class="tag pdf">PDF</span>
+          <h3>학술지 연구윤리규정</h3>
+          <p>한국언론학보의 연구윤리와 관련된 규정 전문입니다.</p>
+          <span class="open">원문 보기 <span>→</span></span>
+        </a>
+        <a class="card outline reveal" href="https://zephyr71.github.io/kjjcs-invitation-video/kjjc-regulations.pdf" target="_blank" rel="noopener">
+          <span class="tag pdf">PDF</span>
+          <h3>한국언론학보 규정</h3>
+          <p>논문 투고와 심사, 발간 등 학보 운영에 관한 규정 전문입니다.</p>
+          <span class="open">원문 보기 <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="manuals">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="num">04</span>
+        <h2>역할별 매뉴얼</h2>
+        <p>편집위원과 심사위원을 위한 실무 안내입니다.</p>
+      </div>
+      <div class="grid two">
+        <a class="card compact reveal" href="https://zephyr71.github.io/kwu-media-programs/editorial-manual/editorial-manual.html" target="_blank" rel="noopener">
+          <span class="tag web">웹페이지</span>
+          <h3>한국언론학보 편집위원회 매뉴얼</h3>
+          <p>편집위원을 위한 업무 안내입니다.</p>
+          <span class="open">열어보기 <span>→</span></span>
+        </a>
+        <a class="card compact reveal" href="https://zephyr71.github.io/kwu-media-programs/reviewer-manual/reviewer-manual.html" target="_blank" rel="noopener">
+          <span class="tag web">웹페이지</span>
+          <h3>한국언론학보 심사위원 매뉴얼</h3>
+          <p>심사위원을 위한 심사 안내입니다.</p>
+          <span class="open">열어보기 <span>→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="https://comm.or.kr/" target="_blank" rel="noopener" style="border:0">한국언론학회</a>
+    <p>04520 서울특별시 중구 세종대로 124 한국프레스센터 1409호</p>
+    <p>Tel 02-762-6833 · Fax 02-723-8351 · <a href="mailto:office@comm.or.kr">office@comm.or.kr</a></p>
+    <p style="margin-top:16px"><a href="https://comm.or.kr/" target="_blank" rel="noopener">학회 홈페이지</a> · <a href="https://ksjcs.jams.or.kr/" target="_blank" rel="noopener">논문 투고 시스템</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
